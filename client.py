@@ -12,3 +12,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client_socket:
     data = client_socket.recv(1024)
     print(f"[CLIENT] Received from server: {data.decode()}")
     print(f"changes to detect")
+    print("Succesfully completed")
