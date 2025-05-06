@@ -8,6 +8,8 @@ PORT = 8888         # Port to connect to
 # Create a TCP socket
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client_socket:
     client_socket.connect((HOST, PORT))  # Connect to server
-    client_socket.sendall(b'Hello, server!')
+    client_socket.sendall(b'Helllllllo, server!')
     data = client_socket.recv(1024)
     print(f"[CLIENT] Received from server: {data.decode()}")
+    print(f"changes to detect")
+    print("Succesfully completed")
